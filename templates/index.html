@@ -1,0 +1,1046 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Travello</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Travello template project">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="{% static 'styles/bootstrap4/bootstrap.min.css' %}">
+<link href="{% static 'plugins/font-awesome-4.7.0/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="{% static 'plugins/OwlCarousel2-2.2.1/owl.carousel.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'plugins/OwlCarousel2-2.2.1/owl.theme.default.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'plugins/OwlCarousel2-2.2.1/animate.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'styles/main_styles.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'styles/responsive.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'styles/style.css' %}">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<!-- Google font -->
+<link href="https://fonts.googleapis.com/css?family=Cantata+One" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Imprima" rel="stylesheet">
+
+<!-- Bootstrap -->
+<link type="text/css" rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" />
+
+<!-- Custom stlylesheet -->
+<link type="text/css" rel="stylesheet" href="{% static 'css/style.css' %}" />
+<link type="text/css" rel="stylesheet" href="{% static 'css/style1.css' %}" />
+<style type="text/css">
+	input {
+	  padding: 5px 10px;
+	}
+	::placeholder {
+	  color: #1c87c9;
+	  opacity: 1;  /* Firefox */
+	}
+	:-webkit-input-placeholder {
+	  /* Chrome, Safari, Opera */
+	  color: #1c87c9;
+	}
+	::-ms-input-placeholder {
+	  /* Microsoft Edge */
+	  color: #1c87c9;
+	}
+</style>
+
+<style>
+.first-info{
+    width: 100%;
+    height: 300px;
+    background-image: url( "{% static 'img/bg.jpg' %}");
+}
+</style>
+
+<style type="text/css">
+	.button3 {
+		background-color: #4CAF50; /* Green */
+		border: none;
+		color: white;
+		padding: 15px 32px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 16px;
+	  }
+	::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+		color: red;
+		opacity: 1; /* Firefox */
+	  }
+	  
+	:-ms-input-placeholder { /* Internet Explorer 10-11 */
+		color: red;
+	  }
+	  
+</style>
+</head>
+<body>
+
+
+	
+
+<div class="super_container">
+	
+	<!-- Header -->
+
+	<header class="header">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="header_content d-flex flex-row align-items-center justify-content-start">
+						<div class="header_content_inner d-flex flex-row align-items-end justify-content-start">
+							<div class="logo"><a href="index">Sarige tours and travels</a></div>
+							<nav class="main_nav">
+								<ul class="d-flex flex-row align-items-start justify-content-start">
+									<li class="active"><a href="index">Home</a></li>
+									<li><a href="about">About us</a></li>
+									<li><a href="elements">Services</a></li>
+									<li><a href="news">News</a></li>
+									<li><a href="contact">Contact</a></li>
+									<li></li>
+								</ul>
+							</nav>
+							<div></div>
+							<div></div>
+							
+							<div class="header_phone ml-auto" ><a href="tel:080-42076875" style="color: white;"><img src="{% static 'images/icon1.png' %}" width="40" height="40"> Call us:  080-42076875</a></div>
+
+							<!-- Hamburger -->
+
+							<div class="hamburger ml-auto">
+								<i class="fa fa-bars" aria-hidden="true"></i>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header_social d-flex flex-row align-items-center justify-content-start">
+			<ul class="d-flex flex-row align-items-start justify-content-start">
+				<li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+			</ul>
+		</div>
+	</header>
+
+	<!-- Menu -->
+
+	<div class="menu">
+		<div class="menu_header d-flex flex-row align-items-center justify-content-start">
+			<div class="menu_logo"><a href="index">Sarige Tours and Travels</a></div>
+			<div class="menu_close_container ml-auto"><div class="menu_close"><div></div><div></div></div></div>
+		</div>
+		<div class="menu_content">
+			<ul>
+				<li><a href="index">Home</a></li>
+				<li><a href="about">About us</a></li>
+				<li><a href="#">Services</a></li>
+				<li><a href="news">News</a></li>
+				<li><a href="contact">Contact</a></li>
+			</ul>
+		</div>
+		<div class="menu_social">
+			<div class="menu_phone ml-auto">Call us:  080 42076875</div>
+			<ul class="d-flex flex-row align-items-start justify-content-start">
+				<li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+			</ul>
+		</div>
+	</div>
+	
+	<!-- Home -->
+
+	<div class="home">
+		
+		<!-- Home Slider -->
+		<div class="home_slider_container">
+			<div class="owl-carousel owl-theme home_slider">
+				
+				<!-- Slide -->
+				<div class="owl-item">
+					<div class="background_image" style ="background-image:url('{% static "images/home_slider.jpg" %}')"></div>
+					<div class="home_slider_content_container">
+						<div class="container">
+							<div class="row">
+								<div class="col">
+									<div class="home_slider_content">
+										<div class="home_title"><h2>Let us take you away</h2></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Slide -->
+				<div class="owl-item">
+					<div class="background_image" style ="background-image:url({% static 'images/home_slider.jpg' %})"></div>
+					<div class="home_slider_content_container">
+						<div class="container">
+							<div class="row">
+								<div class="col">
+									<div class="home_slider_content">
+										<div class="home_title"><h2>Let us take you away</h2></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Slide -->
+				<div class="owl-item">
+					<div class="background_image" style="background-image:url('{% static "images/home_slider.jpg" %}')"></div>
+					<div class="home_slider_content_container">
+						<div class="container">
+							<div class="row">
+								<div class="col">
+									<div class="home_slider_content">
+										<div class="home_title"><h2>Let us take you away</h2></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="home_page_nav">
+				<ul class="d-flex flex-column align-items-end justify-content-end">
+					<li><a href="#" data-scroll-to="#destinations">Offers<span>01</span></a></li>
+					<li><a href="#" data-scroll-to="#news">Latest<span>03</span></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<!-- Search -->
+
+	<div class="home_search">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="home_search_container">
+						<div class="home_search_title">Search for your trip</div>
+						<div class="home_search_content">
+							<form  class="home_search_form" id="home_search_form"></form>
+								<div class="d-flex flex-lg-row flex-column align-items-start justify-content-lg-between justify-content-start">
+									<form action="airport">
+										<button class="home_search_button">Airport</button>
+									</form>
+									
+									<form action="outstion">
+										<button class="home_search_button">out station</button>
+									</form>
+									<form action="honey">
+										<button class="home_search_button">Honeymoon packages</button>
+									</form>
+									<form action="tour">
+										<button class="home_search_button">tour packages</button>
+									</form>
+									
+								</div>
+							
+						</div>
+						
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	{% if name %}
+						<div class="row">
+							<div class="col-lg-6">
+							  <table class="table table-striped options_cart" style="background: chartreuse;" border="2px">
+								  
+									<thead>
+										<tr>
+											<th>
+												Vechicle
+											</th>
+											<th>
+												Vechicle Type
+											</th>
+											<th>
+												Ac
+											</th>
+											<th >
+												Non Ac
+											</th>								
+											</tr>
+										</thead>
+										<tbody>
+																	<tr>
+												<td>
+													<img src="{% static 'images/vehicles/7.jpg' %} " width="20" height="20" alt="Image">
+												</td>
+												<td>
+														 <strong>Hatchback (4+1) </strong>
+												</td>
+												
+												<td>
+													<form method="POST" action="sm1">
+														{% csrf_token %}	
+																					<button onclick="sm1" >₹ 8.50/KM </button>																			
+																					</td>
+												<td>	
+																					<button onclick="sm1">₹ 8.00/KM </button>	
+																				</td></form>								
+											</tr>					
+																		<tr>
+												<td>
+													<img src="{% static 'images/vehicles/3.jpg' %} " width="20" height="20" alt="Image">
+												</td>
+												<td>
+														 <strong>SEDAN (4+1) </strong>
+												</td>
+												
+												<td>
+													<form method="POST" action="sm2">
+														{% csrf_token %}	
+																					<button onclick="sm2" >₹ 9.50/KM </button>																			
+																					</td>
+												<td>	
+																					<button onclick="sm2">₹ 9.00/KM </button>	
+																				</td></form>								
+							  </tr>	
+							  <tr>
+												<td>
+													<img src="{% static 'images/vehicles/6.jpg' %} " width="20" height="20" alt="Image">
+												</td>
+												<td>
+														 <strong>SUV (6+1) </strong>
+												</td>
+												
+												<td>
+													<form method="POST" action="sm3">
+														{% csrf_token %}	
+																					<button onclick="sm3" >₹ 12.50/KM </button>																			
+																					</td>
+												<td>	
+																					<button onclick="sm3">₹ 12.00/KM </button>	
+																				</td></form>								
+							  </tr>
+							  <tr>
+												<td>
+													<img src="{% static 'images/vehicles/8.jpg' %}" width="20" height="20" alt="Image">
+												</td>
+												<td>
+														 <strong>SUV (7+1) </strong>
+												</td>
+												
+												<td>
+													<form method="POST" action="sm4">
+														{% csrf_token %}	
+																					<button onclick="sm4" >₹ 13.00/KM </button>																			
+																					</td>
+												<td>	
+																					<button onclick="sm4">₹ 12.50/KM </button>	
+																				</td></form>								
+							  </tr>
+							  <tr>
+												<td>
+													<img src="{% static 'images/vehicles/18.jpg' %}" width="20" height="20" alt="Image">
+												</td>
+												<td>
+														 <strong>TEMPO TRAVELLER (12+1) </strong>
+												</td>
+												
+												<td>
+													<form method="POST" action="sm5">
+														{% csrf_token %}	
+																					<button onclick="sm5">₹ 16.00/KM </button>																			
+																					</td>
+												<td>	
+																					<button onclick="sm5">₹ 14.00/KM </button>	
+																				</td></form>								
+							  </tr>
+							  <tr>
+												<td>
+													<img src="{% static 'images/vehicles/20.jpg' %}" width="20" height="20" alt="Image">
+												</td>
+												<td>
+														 <strong>MINI BUS (18+1) </strong>
+												</td>
+												
+												<td>
+													<form method="POST" action="sm6">
+														{% csrf_token %}	
+																					<button onclick="sm6" >₹ 27.00/KM </button>																			
+																					</td>
+												<td>	
+																					<button onclick="sm6">₹ 23.50/KM </button>	
+																				</td></form>								
+							  </tr>
+							  <tr>
+												<td>
+													<img src="{% static 'images/vehicles/20.jpg' %}" width="20" height="20" alt="Image">
+												</td>
+												<td>
+														 <strong>MINII BUS (21+1) </strong>
+												</td>
+												
+												<td>
+													<form method="POST" action="sm7">
+														{% csrf_token %}	
+																					<button onclick="sm7" >₹ 27.00/KM </button>																			
+																					</td>
+												<td>	
+																					<button onclick="sm7">₹ 23.00/KM </button>	
+																				</td></form>								
+							  </tr>
+							  <tr>
+												<td>
+													<img src="{% static 'images/vehicles/mini.jpg' %}" width="20" height="20" alt="Image">
+												</td>
+												<td>
+														 <strong>MIN BUS (25+1) </strong>
+												</td>
+												
+												<td>
+													<form method="POST" action="sm8">
+														{% csrf_token %}	
+																					<button onclick="sm8" >₹ 34.00/KM </button>																			
+																					</td>
+												<td>	
+																					<button onclick="sm8">₹ 28.00/KM </button>	
+																				</td></form>								
+							  </tr>
+							  <tr>
+												<td>
+													<img src="{% static 'images/vehicles/22.jpg' %}" width="20" height="20" alt="Image">
+												</td>
+												<td>
+														 <strong> BUS (33+1) </strong>
+												</td>
+												
+												<td>
+													<form method="POST" action="sm9">
+														{% csrf_token %}	
+																					<button onclick="sm9" >₹ 40.00/KM </button>																			
+																					</td>
+												<td>	
+																					<button class="btn_full trigger_popup_fricc" onclick="sm9">₹ 34.00/KM </button>	
+																				</td></form>								
+							  </tr>
+							  <tr>
+												<td>
+													<img src="{% static 'images/vehicles/23.jpg' %} " width="20" height="20" alt="Image">
+												</td>
+												<td>
+														 <strong>BUS (40+1) </strong>
+												</td>
+												
+												<td>
+													<form method="POST" action="sm10">
+														{% csrf_token %}	
+																					<button onclick="sm10" >₹ 44.00/KM </button>																			
+																					</td>
+												<td>	
+																					<button class="btn_full trigger_popup_fricc" onclick="sm10">₹ -- </button>	
+																				</td></form>								
+							  </tr>
+							  <tr>
+												<td>
+													<img src="{% static 'images/vehicles/40-1.jpg' %}" width="20" height="20" alt="Image">
+												</td>
+												<td>
+														 <strong>BUS (50+1) </strong>
+												</td>
+												
+												<td>
+													<form method="POST" action="sm11">
+														{% csrf_token %}	
+																					<button onclick="sm11" >₹ 44.00/KM </button>																			
+																					</td>
+												<td>	
+																					<button onclick="sm11">₹ 37.00/KM </button>	
+																				</td></form>								
+											</tr>				
+																	</tbody>
+									
+
+								  
+							  </table>			
+					
+							</div>
+						  </div>
+						  {% else %}
+	
+
+	<div id="booking" class="section" >
+		<div class="background_image" style ="background-image:url({% static 'images/K5.jpg' %})"></div>
+		
+		<div class="section-center">
+			<div class="container">
+				<div class="row">
+					<div class="booking-form">
+						<div class="form-header">
+							<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+							<h1>Book a car</h1>
+						</div>
+						<form method="POST" action="index">
+							{% csrf_token %} 
+							<div class="background_image" style ="background-image:url({% static 'images/K5.jpg' %})" width="20" height="20"></div> 
+							<div class="row">
+								
+								<div class="col-sm-6">
+									<div class="form-group">
+										<label style="color: rgb(220, 207, 20);">Name</label>
+										<input class="form-control" type="text" placeholder="Enter your name" name="nm">
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="form-group">
+										<label style="color: rgb(220, 207, 20);">EMAIL ID</label>
+										<span class="form-label">Email</span>
+										<input class="form-control" type="email" placeholder="Enter your email"name="em">
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<label style="color: rgb(220, 207, 20);">PHONE NO</label>
+								<input class="form-control" type="tel" placeholder="Enter your phone number"  name="ph">
+							</div>
+							<div class="form-group">
+								<label style="color: rgb(220, 207, 20);">PICK UP LOCATION</label>
+								<input class="form-control" type="text" placeholder="Enter ZIP/Location" name="pi" id="pick">
+							</div>
+							<div class="form-group">
+								<label style="color: rgb(220, 207, 20);">DROP LOCATION</label>
+								<span class="form-label">Destination</span>
+								<input class="form-control" type="text" placeholder="Enter ZIP/Location"  name="dr" id="drop">
+							</div>
+							<div class="row">
+								<div class="col-sm-5">
+									<div class="form-group">
+										<label style="color: rgb(220, 207, 20);">PICK UP DATE</label>
+										<input class="form-control" type="date" required name="dt">
+									</div>
+								</div>
+								<div class="col-sm-7">
+									
+									<div class="form-group">
+										<label style="color: rgb(220, 207, 20);">PICK UP TIME</label>
+										<input class="form-control" type="time" required name="tm">
+									</div>
+								</div>
+							</div>
+							<div class="form-btn">
+								<button class="submit-btn">Book Now</button>
+							</div>
+							<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+						</form>
+					</div>
+					{%endif%}
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Intro -->
+	<div class="intro">
+	  <div class="background_image" style="background-image:url('{% static 'images/intro.png' %})"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="intro_container">
+						<div class="row">
+
+							<!-- Intro Item -->
+							<div class="col-lg-4 intro_col">
+								<div class="intro_item d-flex flex-row align-items-end justify-content-start">
+									<div class="intro_icon"><img src="{% static 'images/beach.svg' %}" alt=""></div>
+									<div class="intro_content">
+										<div class="intro_title">HOLIDAY PACKAGES</div>
+		 								<div class="intro_subtitle"><p></p></div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Intro Item -->
+							<div class="col-lg-4 intro_col">
+								<div class="intro_item d-flex flex-row align-items-end justify-content-start">
+									<div class="intro_icon"><img src="{% static 'images/wallet.svg' %}" alt=""></div>
+									<div class="intro_content">
+										<div class="intro_title">LUXURY CARS</div>
+										<div class="intro_subtitle"><p></p></div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Intro Item -->
+							<div class="col-lg-4 intro_col">
+								<div class="intro_item d-flex flex-row align-items-end justify-content-start">
+									<div class="intro_icon"><img src="{% static 'images/suitcase.svg' %}" alt=""></div>
+									<div class="intro_content">
+										<div class="intro_title">WEDDING CARS</div>
+										<div class="intro_subtitle"><p></p></div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>		
+			</div>
+		</div>
+	</div>
+
+	<!-- Destinations -->
+
+	<div class="destinations" id="destinations">
+		<div class="container">
+			<div class="row">
+				<div class="col text-center">
+					<div class="section_subtitle">simply amazing places</div>
+					<div class="section_title"><h2>Popular Destinations</h2></div>
+				</div>
+			</div>
+			<section id="home_secttion">
+				<div class="row destinations_row">
+					<div class="col">
+						<div class="destinations_container item_grid">
+	
+							<!-- Destination -->
+							<div class="destination item">
+								<div class="destination_image">
+									<div><a href="destinations"><img src="{% static 'images/cover/1.jpg' %}" alt=""></a></div>
+									<div class="spec_offer text-center"><a href="">Special Offer</a></div>
+								</div>
+								<div class="destination_content">
+									<div class="destination_title"><a href="destinations">KARNATAKA</a></div>
+									<div class="row load_more_row">
+										<div class="col">
+											<div class="button load_more_button"><a href="destinations">TO SEE TOP DESTINATION ON KARNATAKA CLICK HERE</a></div>
+										</div>
+									</div>
+									<div class="destination_subtitle"><p></p></div>
+									<div class="destination_price"></div>
+								</div>
+							</div>
+	
+							<!-- Destination -->
+							<div class="destination item">
+								<div class="destination_image">
+									<div><a href="destinations2"><img src="{% static 'images/cover/2.jpg' %}" alt=""></a></div>
+								</div>
+								<div class="destination_content">
+									<div class="destination_title"><a href="destinations2">GOA</a></div>
+									<div class="row load_more_row">
+										<div class="col">
+											<div class="button load_more_button"><a href="destinations2">TO SEE TOP DESTINATION ON GOA CLICK HERE</a></div>
+										</div>
+									</div>
+									<div class="destination_subtitle"><p></p></div>
+									<div class="destination_price"></div>
+								</div>
+							</div>
+	
+							<!-- Destination -->
+							<div class="destination item">
+								<div class="destination_image">
+									<div><a href="destinations3"><img src="{% static 'images/cover/3.jpg'  %}" alt=""></a></div>
+								</div>
+								<div class="destination_content">
+									<div class="destination_title"><a href="destinations3">ANDRA PRADESH</a></div>
+									<div class="row load_more_row">
+										<div class="col">
+											<div class="button load_more_button"><a href="destinations3">TO SEE TOP DESTINATION ON ANDRA PRADESH CLICK HERE</a></div>
+										</div>
+									</div>
+									<div class="destination_subtitle"><p></p></div>
+									<div class="destination_price"></div>
+								</div>
+							</div>
+	
+							<!-- Destination -->
+							<div class="destination item">
+								<div class="destination_image">
+									<div><a href="destinations4"><img src="{% static 'images/cover/4.jpg' %}" alt=""></a></div>
+								</div>
+								<div class="destination_content">
+									<div class="destination_title"><a href="destinations4">TAMIL NADU</a></div>
+									<div class="row load_more_row">
+										<div class="col">
+											<div class="button load_more_button"><a href="destinations4">TO SEE TOP DESTINATION ON TAMIL NADU CLICK HERE</a></div>
+										</div>
+									</div>
+									<div class="destination_subtitle"><p></p></div>
+									<div class="destination_price"></div>
+								</div>
+							</div>
+	
+							<!-- Destination -->
+							<div class="destination item">
+								<div class="destination_image">
+									<div><a href="destinations5"><img src="{% static 'images/cover/5.jpg' %}" alt=""></a></div>
+								</div>
+								<div class="destination_content">
+									<div class="destination_title"><a href="destinations5">KERALA</a></div>
+									<div class="row load_more_row">
+										<div class="col">
+											<div class="button load_more_button"><a href="destinations5">TO SEE TOP DESTINATION ON KERALA CLICK HERE</a></div>
+										</div>
+									</div>
+									<div class="destination_subtitle"><p></p></div>
+									<div class="destination_price"></div>
+								</div>
+							</div>
+	
+							<!-- Destination -->
+							<div class="destination item">
+								<div class="destination_image">
+									<div><a href="dest6"><img src="{% static 'images/cover/6.jpg' %}" alt=""></a></div>
+								</div>
+								<div class="destination_content">
+									<div class="destination_title"><a href="dest6">MAHARASHTRA</a></div>
+									<div class="row load_more_row">
+										<div class="col">
+											<div class="button load_more_button"><a href="dest6">TO SEE TOP DESTINATION ON MAHARASHTRA NADU CLICK HERE</a></div>
+										</div>
+									</div>
+									<div class="destination_subtitle"><p></p></div>
+									<div class="destination_price"></div>
+								</div>
+							</div>
+	
+						</div>
+					</div>
+				</div>
+			</section>
+			
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col text-center">
+					<div class="section_subtitle">simply amazing places</div>
+					<div class="section_title"><h2>Popular Hanymoon places</h2></div>
+				</div>
+			</div>
+			<div class="row destinations_row">
+				<div class="col">
+					<div class="destinations_container item_grid">
+
+						<!-- Destination -->
+						<div class="destination item">
+							<div class="destination_image">
+								<img src="{% static 'images/honey moon/1.jpg' %}" alt="">
+								<div class="spec_offer text-center"><a href="#">Special Offer</a></div>
+							</div>
+							<div class="destination_content">
+								<div class="destination_title"><a href="bk">COORG</a></div>
+								<div class="buttons">
+									<form action="bk">
+									<a href="bk2"><button class="button3" >BOOK NOW</button></a>
+								    </form>
+								</div>
+								<div class="destination_subtitle"><p></p></div>
+								<div class="destination_price"></div>
+							</div>
+						</div>
+
+						<!-- Destination -->
+						<div class="destination item">
+							<div class="destination_image">
+								<img src="{% static 'images/honey moon/2.jpg' %}" alt="">
+							</div>
+							<div class="destination_content">
+								<div class="destination_title"><a href="destinations.html">PITY</a></div>
+								<div class="buttons">
+									<form action="bk">
+									<button class="button3" >BOOK NOW</button>
+								    </form>
+								</div>
+								<div class="destination_subtitle"><p></p></div>
+								<div class="destination_price"></div>
+							</div>
+						</div>
+
+						<!-- Destination -->
+						<div class="destination item">
+							<div class="destination_image">
+								<img src="{% static 'images/honey moon/3.jpg'  %}" alt="">
+							</div>
+							<div class="destination_content">
+								<div class="destination_title"><a href="destinations.html">MUNNAR</a></div>
+								<div class="buttons">
+									<form action="bk">
+										<button class="button3" >BOOK NOW</button>
+									</form>
+								</div>
+								<div class="destination_subtitle"><p></p></div>
+								<div class="destination_price"></div>
+							</div>
+						</div>
+
+						<!-- Destination -->
+						<div class="destination item">
+							<div class="destination_image">
+								<img src="{% static 'images/honey moon/4.jpg' %}" alt="">
+							</div>
+							<div class="destination_content">
+								<div class="destination_title"><a href="destinations.html">MANALI</a></div>
+								<div class="buttons">
+									<form action="bk">
+										<button class="button3" >BOOK NOW</button>
+									</form>
+								</div>
+								<div class="destination_subtitle"><p></p></div>
+								<div class="destination_price"></div>
+							</div>
+						</div>
+
+						<!-- Destination -->
+						<div class="destination item">
+							<div class="destination_image">
+								<img src="{% static 'images/honey moon/5.jpg' %}" alt="">
+							</div>
+							<div class="destination_content">
+								<div class="destination_title"><a href="destinations.html">KODAIKANAL</a></div>
+								<div class="buttons">
+									<form action="bk">
+										<button class="button3" >BOOK NOW</button>
+									</form>
+								</div>
+								<div class="destination_subtitle"><p></p></div>
+								<div class="destination_price"></div>
+							</div>
+						</div>
+
+						<!-- Destination -->
+						<div class="destination item">
+							<div class="destination_image">
+								<img src="{% static 'images/honey moon/6.jpg' %}" alt="">
+							</div>
+							<div class="destination_content">
+								<div class="destination_title"><a href="destinations.html">NAINITAL</a></div>
+								<div class="buttons">
+									<form action="bk">
+										<button class="button3" >BOOK NOW</button>
+									</form>
+								</div>
+								<div class="destination_subtitle"><p></p></div>
+								<div class="destination_price"></div>
+							</div>
+						</div>
+						<!-- Destination -->
+						<div class="destination item">
+							<div class="destination_image">
+								<img src="{% static 'images/honey moon/7.jpg' %}" alt="">
+							</div>
+							<div class="destination_content">
+								<div class="destination_title"><a href="destinations.html">PUDUCHERRY</a></div>
+								<div class="buttons">
+									<form action="bk">
+										<button class="button3" >BOOK NOW</button>
+									</form>
+								</div>
+								<div class="destination_subtitle"><p></p></div>
+								<div class="destination_price"></div>
+							</div>
+						</div>
+						<!-- Destination -->
+						<div class="destination item">
+							<div class="destination_image">
+								<img src="{% static 'images/honey moon/8.jpg' %}" alt="">
+							</div>
+							<div class="destination_content">
+								<div class="destination_title"><a href="destinations.html">SHIMLA</a></div>
+								<div class="buttons">
+									<form action="bk">
+										<button class="button3" >BOOK NOW</button>
+									</form>
+								</div>
+								<div class="destination_subtitle"><p></p></div>
+								<div class="destination_price"></div>
+							</div>
+						</div>
+						<!-- Destination -->
+						<div class="destination item">
+							<div class="destination_image">
+								<img src="{% static 'images/honey moon/9.jpg' %}" alt="">
+							</div>
+							<div class="destination_content">
+								<div class="destination_title"><a href="destinations.html">AGRA</a></div>
+								<div class="buttons">
+									<form action="bk">
+										<button class="button3" >BOOK NOW</button>
+									</form>
+								</div>
+								<div class="destination_subtitle"><p></p></div>
+								<div class="destination_price"></div>
+							</div>
+						</div>
+						<!-- Destination -->
+						<div class="destination item">
+							<div class="destination_image">
+								<img src="{% static 'images/honey moon/10.jpg' %}" alt="">
+							</div>
+							<div class="destination_content">
+								<div class="destination_title"><a href="destinations.html">ANDAMAN</a></div>
+								<div class="buttons">
+									<form action="bk">
+										<button class="button3" >BOOK NOW</button>
+									</form>
+								</div>
+								<div class="destination_subtitle"><p></p></div>
+								<div class="destination_price"></div>
+							</div>
+						</div>
+						<!-- Destination -->
+						<div class="destination item">
+							<div class="destination_image">
+								<img src="{% static 'images/honey moon/11.jpg' %}" alt="">
+							</div>
+							<div class="destination_content">
+								<div class="destination_title">SRINAGAR</div>
+								<div class="buttons">
+									<form action="bk">
+										<button class="button3" >BOOK NOW</button>
+									</form>
+								</div>
+								<div class="destination_subtitle"><p></p></div>
+								<div class="destination_price"></div>
+							</div>
+						</div>
+						<!-- Destination -->
+						<div class="destination item">
+							<div class="destination_image">
+								<img src="{% static 'images/honey moon/12.jpg' %}" alt="">
+							</div>
+							<div class="destination_content">
+								<div class="destination_title"><a href="destinations.html">UDAIPUR</a></div>
+								<div class="buttons">
+									<form action="bk">
+										<button class="button3" >BOOK NOW</button>
+									</form>
+								</div>
+								<div class="destination_subtitle"><p></p></div>
+								<div class="destination_price"></div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+	<!-- Footer -->
+
+	<footer class="footer">
+		<div class="parallax_background parallax-window" data-parallax="scroll" data-image-src="{% static 'images/footer_1.jpg' %}" data-speed="0.8"></div>
+		<!--<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="newsletter">
+						<div class="newsletter_title_container text-center">
+							<div class="newsletter_title"></div>
+							<div class="newsletter_subtitle"></div>
+						</div>
+						<div class="newsletter_form_container">
+							<form action="#" class="newsletter_form d-flex flex-md-row flex-column align-items-start justify-content-between" id="newsletter_form">
+								<div class="d-flex flex-md-row flex-column align-items-start justify-content-between">
+									<div><input type="text" class="newsletter_input newsletter_input_name" id="newsletter_input_name" placeholder="Name" required="required"><div class="input_border"></div></div>
+									<div><input type="email" class="newsletter_input newsletter_input_email" id="newsletter_input_email" placeholder="Your e-mail" required="required"><div class="input_border"></div></div>
+								</div>
+								<div><button class="newsletter_button"></button></div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>-->
+			<div class="row footer_contact_row">
+				<div class="col-xl-10 offset-xl-1">
+					<div class="row">
+
+						<!-- Footer Contact Item -->
+						<div class="col-xl-4 footer_contact_col">
+							<div class="footer_contact_item d-flex flex-column align-items-center justify-content-start text-center">
+								<div class="footer_contact_icon"><img src="{% static 'images/sign.svg' %}" alt=""></div>
+								<div class="footer_contact_title">give us a call</div>
+								<div class="footer_contact_list">
+									<ul>
+										<li>Office Landline:  080 42076875</li>
+										<li>Mobile: 91 99800 56565, 99800 62020</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<!-- Footer Contact Item -->
+						<div class="col-xl-4 footer_contact_col">
+							<div class="footer_contact_item d-flex flex-column align-items-center justify-content-start text-center">
+								<div class="footer_contact_icon"><img src="{% static 'images/trekking.svg' %}" alt=""></div>
+								<div class="footer_contact_title">come & drop by</div>
+								<div class="footer_contact_list">
+									<ul style="max-width:190px">
+										<li> #246, 7th Cross, 6th block,
+											BSK 3rd Stage, Kathriguppe,
+											Bengaluru - 560 085</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<!-- Footer Contact Item -->
+						<div class="col-xl-4 footer_contact_col">
+							<div class="footer_contact_item d-flex flex-column align-items-center justify-content-start text-center">
+								<div class="footer_contact_icon"><img src="{% static 'images/around.svg' %}" alt=""></div>
+								<div class="footer_contact_title"></div>
+								<div class="footer_contact_list">
+									<ul>
+										<li>sarigecabs@gmail.com</li>
+										<li>bookings@sarigecabs.com</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col text-center"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script>This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://www.sarigecabs.com/" target="_blank">sarige cabs</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --> </div>
+
+	</footer>
+</div>
+
+<script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+<script src="{% static 'styles/bootstrap4/popper.js' %}"></script>
+<script src="{% static 'styles/bootstrap4/bootstrap.min.js' %}"></script>
+<script src="{% static 'plugins/OwlCarousel2-2.2.1/owl.carousel.js' %}"></script>
+<script src="{% static 'plugins/Isotope/isotope.pkgd.min.js' %}"></script>
+<script src="{% static 'plugins/scrollTo/jquery.scrollTo.min.js' %}"></script>
+<script src="{% static 'plugins/easing/easing.js' %}"></script>
+<script src="{% static 'plugins/parallax-js-master/parallax.min.js' %}"></script>
+<script src="{% static 'js/custom.js' %}"></script>
+<a href="https://wa.me/917760479428" class="whatsapp_float" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
+<script>
+	function activatesearchplaces(){
+		var pick = document.getElementById('pick');
+		var drop = document.getElementById('drop');
+		var autocomplet = new google.maps.places.Autocomplete(pick);
+		var autocomplet = new google.maps.places.Autocomplete(drop);
+	}
+</script>
+<script defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAWZFK85ti0o7QRgQoMxaFdvOVt24ZsnOQ&libraries=places&callback=activatesearchplaces">
+</script>
+</body>
+</html>
